@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>TryScripted</title>
+  <base href="/" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+  <style type="text/css">
+
+    .scriptededitor {
+      font-size: 16px;
+    }
+
+    .scriptededitor p {
+      font-size: 1.0em; 
+      margin: .75em 0 
+    }
+
+    .scriptededitor h1 { 
+      position: static;
+      font-size: 2em;
+      margin: .67em 0 
+    }
+
+    .scriptededitor h2 {
+      position: static;
+      font-size: 1.5em; 
+      margin: .75em 0 
+    }
+    
+    .scriptededitor h3 {
+      position: static;
+      font-size: 1.17em; 
+      margin: .83em 0 
+    }
+  </style>
+</head>
+<body spellcheck="false" class="nihilo">
+  <header class="main_gradient">
+    <span class="tryScriptedHolder">
+      <span class="scriptedlogo">
+        <a href="https://github.com/scripted-editor/scripted">
+          <img src="images/scripted-logo.png" height="26px"></img>
+        </a>
+      </span>
+      <span class="scriptedlogo">
+        <a href="about.html">
+          <img src="images/about-tryscripted.png" height="26px"></img>
+        </a>
+      </span>
+    </span>
+  </header>
+
+  <div id="main">
+    <div id="navigator-wrapper">
+      <div id="navigator-container">
+        <div id="explorer-tree">
+        </div>
+      </div>
+    </div>
+
+    <ul id="breadcrumb">
+    </ul>
+
+    <div id="editor_wrapper">
+      <div id="editor" class="scriptededitor">
+        <h1>About TryScripted</h1>
+        <h3>What is TryScripted</h3>
+        <p>
+          TryScripted is an unofficial project dedicated to <a href="https://github.com/scripted-editor/scripted">Scripted Editor</a>. It's aim is to demonstrate some of the functionality of the editor, without the need to install it. 
+        </p>
+        <p>
+          Since it is for demo purpose, file modifications will most likely be <strong>lost</strong> in time. Files in TryScripted are visible to everyone, so <strong>do not insert sensitive content</strong>. Because Scripted is intended to run locally, delays and performance downgrade are expected. If you intend to use the editor with it's full capabilities, please <a href="https://github.com/scripted-editor/scripted">download it</a>. 
+        </p>
+        <h3>How it's made</h3>
+        <p>
+          TryScripted is deployed on <a href="http://www.cloudfoundry.com/">Cloud Foundry</a>. It is a modified version of Scripted, with minimal changes to run on a public server. The main change is to use <a href="https://github.com/eldargab/node-fake-fs">fake-fs</a>, an in-memory filesystem abstraction.
+        </p>
+        <p>
+          You can see all the changes that were made on <a href="https://github.com/scripted-editor/scripted">Scripted</a> and <a href="https://github.com/eldargab/node-fake-fs">fake-fs</a> on my forks, respectively, <a href="https://github.com/tgeorgiev/scripted/tree/try-scripted-0.3">https://github.com/tgeorgiev/scripted/tree/try-scripted-0.3</a> and <a href="https://github.com/tgeorgiev/node-fake-fs/tree/try-scripted">https://github.com/tgeorgiev/node-fake-fs/tree/try-scripted</a>.
+        </p>
+        <p>
+          Other than that, deploying on Cloud Foundry was easy as typing "vmc push --runtime=node08"
+        </p>
+        <h3>Who am I</h3>
+          <iframe src="http://ghbtns.com/github-btn.html?user=tgeorgiev&type=follow" allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe>
+          <a href="https://twitter.com/maverix7" class="twitter-follow-button" data-show-count="false">Follow @maverix7</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="main_gradient">
+    <div id="status"></div>
+  </footer>
+</body>
+</html>
