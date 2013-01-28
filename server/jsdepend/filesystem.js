@@ -51,7 +51,7 @@ function ignore(name) {
 }
 
 function withBaseDir(baseDir) {
-	var fs = require('fs');
+	var fs = require('../utils/fake-fs-proxy');
 	var encoding = 'UTF-8';
 	
 	function getUserHome() {

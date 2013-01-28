@@ -13,7 +13,7 @@
  ******************************************************************************/
 /*global exports require console __dirname */
 
-var fs = require('fs');
+var fs = require('../utils/fake-fs-proxy');
 var rootdir = require("path").normalize(__dirname+"../../..")+"/";
 var term = "readdirSync";
 var matches = [];

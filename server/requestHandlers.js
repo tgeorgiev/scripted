@@ -16,7 +16,7 @@
  
 /*global console require exports process*/
 var querystring = require("querystring");
-var fs = require("fs");
+var fs = require("./utils/fake-fs-proxy");
 var formidable = require("formidable");
 var url = require('url');
 var templates = require('./templates/template-provider');
